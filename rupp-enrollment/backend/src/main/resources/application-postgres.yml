@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/rupp}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+  h2:
+    console:
+      enabled: false
