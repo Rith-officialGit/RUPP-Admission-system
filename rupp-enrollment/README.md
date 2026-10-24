@@ -10,7 +10,7 @@ Royal University of Phnom Penh – admission, entrance exam and results manageme
 
 ### 1. Backend (http://localhost:8080)
 ```bash
-cd C:\Users\RITH\Downloads\rupp-enrollment\rupp-enrollment\backend
+cd rupp-enrollment\backend
 mvn spring-boot:run
 # PostgreSQL instead of H2:
 # DB_URL=jdbc:postgresql://localhost:5432/rupp DB_USER=postgres DB_PASSWORD=... mvn spring-boot:run -Dspring-boot.run.profiles=postgres
@@ -19,7 +19,7 @@ On first start the database is seeded with demo data.
 
 ### 2. Frontend (http://localhost:3000)
 ```bash
-cd C:\Users\RITH\Downloads\rupp-enrollment\rupp-enrollment\frontend
+cd rupp-enrollment\frontend
 cp .env.local.example .env.local   # NEXT_PUBLIC_API_URL=http://localhost:8080/api
 npm install
 npm run dev
